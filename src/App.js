@@ -1,23 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import CounterContainer from './containers/CounterContainer';
+import CounterHookContainer from './containers/CounterHookContainer';
+import TodoContainer from './containers/TodoContainer';
+import TodoHookContainer from './containers/TodoHookContainer';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <CounterContainer/>
+      <CounterHookContainer/>
+      <hr/>
+      <TodoContainer/>
+      <TodoHookContainer/>
     </div>
   );
 }
